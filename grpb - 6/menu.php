@@ -55,6 +55,12 @@
         <?php } ?>
             <a href="index.php" class="brand-logo">Accueil</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <?php
+                require_once "cfg/config.php";
+                if(isset($_SESSION['user'])){
+                    if($_SESSION['user']['admin']==1){
+                        echo "<li><a href='admin.php' text-decoration:none><img src='img/icons8-parametres-administrateur-homme-50.png'></a></li>";}}
+                ?>
                 <li><a href="kyhudji.php">Kyhudji.gg</a></li>
                 <li><a href="squadhost_.php">SquadHost_</a></li>
             </ul>

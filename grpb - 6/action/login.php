@@ -1,6 +1,6 @@
 <?php 
 require_once "../cfg/config.php"; 
-$sql = "SELECT * FROM user WHERE email='".$_POST['email']."' AND password='".$_POST['password']."'"; 
+$sql = "SELECT * FROM user WHERE email='".$_POST['email']."' AND password='".md5($_POST['password'])."'"; 
 $pre = $pdo->prepare($sql); 
 $pre->execute();
 $user = $pre->fetch(PDO::FETCH_ASSOC);
