@@ -3,7 +3,7 @@ require_once "../cfg/config.php";
 $sql = "INSERT INTO user(email,password,username) VALUES(:email,:password,:username)";
 $dataBinded=array(
     ':email'   => $_POST['email'],
-    ':password'=> md5($_POST['password']),
+    ':password'=> sha1("hsvbsxhjwbvwdxvwhdxkhkwxbwxhkvkvhwbhvkbwvx".$_POST['password']),
     ':username'=> $_POST['username'],
 );
 $pre = $pdo->prepare($sql);
