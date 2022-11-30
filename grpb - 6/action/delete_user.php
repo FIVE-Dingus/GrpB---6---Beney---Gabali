@@ -7,5 +7,5 @@ $dataBinded=array(
 $pre = $pdo->prepare($sql); //on prévient la base de données qu'on va executer une requête
 $pre->execute($dataBinded);//on l'execute
 
-//header("location:../admin.php");
+header("location:../admin.php");
 ?>

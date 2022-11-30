@@ -25,9 +25,12 @@
         require_once "cfg/config.php";
         if(isset($_SESSION['user'])){
             echo "<a href='action/logout.php'><img src='img/icons8-sortie-50.png' alt='' height=100% ></a>";
-            }else{
-            echo "Vous n'êtes pas connecté";
-            }
+        }elseif(isset($_SESSION['error'])){
+            echo ($_SESSION['error']);
+            unset($_SESSION['error']);
+        }else{
+          echo "Vous n'êtes pas connecter";
+        }
         ?>
         <?php if(!isset($_SESSION['user'])){ ?>
           <a class="waves-effect waves-light btn modal-trigger black" href="#modal2">Inscrivez vous</a>
