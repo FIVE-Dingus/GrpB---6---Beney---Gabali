@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Lun 28 Novembre 2022 à 14:33
+-- Généré le :  Mer 30 Novembre 2022 à 14:10
 -- Version du serveur :  5.7.11
 -- Version de PHP :  7.0.3
 
@@ -41,8 +41,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `password`, `username`, `admin`) VALUES
-(1, 'legamerdu8971@gmail.com', 'duiqbviqdig', 'lol', 0),
-(2, 'legamerdu8971@gmail.com', 'duiqbviqdig', 'lol', 0);
+(1, 'legamerdu8971@gmail.com', '202cb962ac59075b964b07152d234b70', 'lol', 1);
 
 --
 -- Index pour les tables exportées
@@ -62,7 +61,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
