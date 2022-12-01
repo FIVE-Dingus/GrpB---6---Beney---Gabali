@@ -27,7 +27,7 @@
         $sql = "SELECT * FROM projets"; //votre requêtes SQL (vous savez faire maintenant héhé !)
         $pre = $pdo->prepare($sql); //on prévient la base de données qu'on va executer une requête
         $pre->execute();//on l'execute
-        $data = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une variable (ici $data)
+        $project = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une variable (ici $data)
 
 
         if(isset($_SESSION['user'])){
@@ -70,8 +70,9 @@
                 if(isset($_SESSION['user'])){
                     if($_SESSION['user']['admin']==1){
                         echo "<li><a href='admin.php' text-decoration:none><img src='img/icons8-parametres-administrateur-homme-50.png'></a></li>";}}
-                foreach($data as $project) 
-                ?>
+                foreach($project as $name){ ?>
+                    <li><a href="projets.php?id=<?php echo $name['id']?>"><?php echo $name['titre']?></a></li>
+                <?php }?>
                 
             </ul>
           <ul id="slide-out" class="sidenav">

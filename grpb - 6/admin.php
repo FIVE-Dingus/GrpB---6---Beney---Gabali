@@ -16,8 +16,7 @@ foreach($data as $user){
 $sql = "SELECT * FROM projets"; //votre requêtes SQL (vous savez faire maintenant héhé !)
 $pre = $pdo->prepare($sql); //on prévient la base de données qu'on va executer une requête
 $pre->execute();//on l'execute
-$data = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une variable (ici $data)
-foreach($data as $project)
+$project = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une variable (ici $data)
 ?>
 <form method='post' action='action/delete_user.php'>
     <h2><?php echo $user['username'] ?></h2>
@@ -31,8 +30,7 @@ foreach($data as $project)
     <input type='submit' value='update' />
 </form>
 <?php }?>
-<h3><?php echo $project['titre'] ?></h3>
-
+<h3><?php echo $project[0]['titre'] ?></h3>
 <form method="post" action="action/ADD_PROJECT.php" enctype="multipart/form-data">
     <label for="#prenom">Votre prenom</label>
     <input id="prenom" type='name' name='prenom'>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 01 Décembre 2022 à 15:58
+-- Généré le :  Jeu 01 Décembre 2022 à 19:01
 -- Version du serveur :  5.7.11
 -- Version de PHP :  7.0.3
 
@@ -54,7 +54,8 @@ CREATE TABLE `projets` (
 --
 
 INSERT INTO `projets` (`id`, `prenom`, `titre`, `img1`, `img2`, `img3`, `img4`, `HTML`, `CSS`, `JS`, `PHP`, `SQL`, `P1`, `P2`, `P3`, `H2`, `H3`, `H4`) VALUES
-(1, 'Dylan', 'Squadhost', '../img/Dylan.jpg', '../img/Kyhudji_background.jpg', '../img/Kyhudji_background.jpg', '../img/Kyhudji_background.jpg', 60, 50, 35, 10, 10, 'bfxdfkjsdfmoksfljhbpdfbnh', 'df,;jhdf;hfdhkfh,dfs;:khjfsd;kfdhfh', 'hfshsfhfhffklnhdfhfdhgdfjwsjekfghzefzfdzdf', 'zcfzcdezsexszcdz', 'sdzcdzscdcd', 'zcfzfz');
+(1, 'Dylan', 'Squadhost', 'img/Dylan.jpg', 'img/Kyhudji_background.jpg', 'img/Kyhudji_background.jpg', 'img/Kyhudji_background.jpg', 60, 50, 35, 10, 10, 'bfxdfkjsdfmoksfljhbpdfbnh', 'df,;jhdf;hfdhkfh,dfs;:khjfsd;kfdhfh', 'hfshsfhfhffklnhdfhfdhgdfjwsjekfghzefzfdzdf', 'zcfzcdezsexszcdz', 'sdzcdzscdcd', 'zcfzfz'),
+(2, 'william', 'Kyhudji.gg', 'img/william.jpg', 'img/rocket-league-x-monstercat-hr.jpg', 'img/Valorant_img.jpg.png', 'img/Trackmania.jpg', 55, 60, 25, 15, 15, 'Mon expérience en esports Rocket league', 'Mon espérience en esports VALORANT', 'Mon espérience en esports TrackMania', 'Esport Rocket League', 'Esport Valorant', 'Esport TrackMania');
 
 -- --------------------------------------------------------
 
@@ -76,7 +77,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `email`, `password`, `username`, `admin`) VALUES
 (4, 'legamerdu8971@gmail.com', '379b0d0ee970124ecfcc0758a568e42d9d0977ac', '1234', 1),
-(5, 'beney7189@gmail.com', '379b0d0ee970124ecfcc0758a568e42d9d0977ac', 'lol', 0);
+(5, 'beney7189@gmail.com', '379b0d0ee970124ecfcc0758a568e42d9d0977ac', 'sdjbvfgduwivjkfv', 0);
 
 --
 -- Index pour les tables exportées
@@ -102,12 +103,12 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `projets`
 --
 ALTER TABLE `projets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
