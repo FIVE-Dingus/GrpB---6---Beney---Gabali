@@ -1,5 +1,10 @@
 <?php 
 require_once "../cfg/config.php"; 
+if(empty($_POST['email']) and empty($_POST['password'])){
+     $_SESSION['error']="email et mot de passe vide! ";
+     header('location: ../index.php');
+     exit();
+}
 if(empty($_POST['email'])){
      $_SESSION['error']="email vide! ";
      header('location: ../index.php');
