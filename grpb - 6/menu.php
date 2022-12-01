@@ -23,6 +23,13 @@
         <div class="nav-wrapper black" >
         <?php
         require_once "cfg/config.php";
+
+        $sql = "SELECT * FROM projets"; //votre requêtes SQL (vous savez faire maintenant héhé !)
+        $pre = $pdo->prepare($sql); //on prévient la base de données qu'on va executer une requête
+        $pre->execute();//on l'execute
+        $data = $pre->fetchAll(PDO::FETCH_ASSOC);// on stocke les données dans une variable (ici $data)
+
+
         if(isset($_SESSION['user'])){
             echo "<a href='action/logout.php'><img src='img/icons8-sortie-50.png' alt='' height=100% ></a>";
         }elseif(isset($_SESSION['error'])){
@@ -63,9 +70,9 @@
                 if(isset($_SESSION['user'])){
                     if($_SESSION['user']['admin']==1){
                         echo "<li><a href='admin.php' text-decoration:none><img src='img/icons8-parametres-administrateur-homme-50.png'></a></li>";}}
+                foreach($data as $project) 
                 ?>
-                <li><a href="kyhudji.php">Kyhudji.gg</a></li>
-                <li><a href="squadhost_.php">SquadHost_</a></li>
+                
             </ul>
           <ul id="slide-out" class="sidenav">
             <li><div class="user-view">

@@ -167,35 +167,14 @@ div.background_debut h1{
     background-image: url(../img/Kyhudji_background.jpg);
 }
 
-.Kyhu1{
-    background-image: url(../img/rocket-league-x-monstercat-hr.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.Kyhu2{
-    background-image: url(../img/Valorant_img.jpg.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.Kyhu3{
-    background-image: url(../img/Trackmania.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 div.skills-william{
     background-image: url(../img/Kyhudji_background.jpg);
     padding: 10%;
 }
 
-  .htmldylan {width: 75%; background-color: #ee5700;} /* Green */
-  .cssdylan {width: 65%; background-color: #2196F3;} /* Blue */
-  .jsdylan {width: 30%; background-color: #fdbb06;} /* Red */
+  .htmldylan {background-color: #ee5700;} /* Green */
+  .cssdylan {background-color: #2196F3;} /* Blue */
+  .jsdylan {background-color: #fdbb06;} /* Red */
 
 .skills-container {
     width: 100%; /* Full width */
@@ -209,11 +188,11 @@ div.skills-william{
     color: white; /* White text color */
   }
   
-  .html {width: 55%; background-color: #ee5700;} /* Green */
-  .css {width: 60%; background-color: #2196F3;} /* Blue */
-  .js {width: 25%; background-color: #fdbb06;} /* Red */
-  .php {width: 15%; background-color: #001aff;} /* Dark Grey */
-  .sql {width: 10%; background-color: #ff0095;} /* Dark Grey */
+  .html { background-color: #ee5700;} /* Green */
+  .css { background-color: #2196F3;} /* Blue */
+  .js { background-color: #fdbb06;} /* Red */
+  .php { background-color: #001aff;}
+  .sql {background-color: #ff0095;}
 
 
 .squadhost{

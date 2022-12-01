@@ -45,72 +45,25 @@
     </div>
       <div class="carousel carousel-slider center dylan">
         <div class="carousel-item Kyhu1 white-text" >
-          <h2>Esport Rocket League</h2>
+          <h4>Esport Rocket League</h4>
           <p class="white-text">Mon expérience en esports Rocket league</p>
           <div class="carousel-fixed-item center">
             <a class="btn waves-effect white grey-text darken-text-2" href="https://www.start.gg/user/baed09d1">button</a>
           </div>
         </div>
         <div class="carousel-item Kyhu2 white-text" >
-          <h2>Esport Valorant</h2>
+          <h5>Esport Valorant</h5>
           <p class="white-text">Mon espérience en esports VALORANT</p>
           <div class="carousel-fixed-item center">
             <a class="btn waves-effect white grey-text darken-text-2" href="https://tracker.gg/valorant/profile/riot/Kyhudji%23KYJ/overview">button</a>
           </div>
         </div>
         <div class="carousel-item Kyhu3 white-text">
-          <h2>Esport TrackMania</h2>
+          <h6>Esport TrackMania</h6>
           <p class="white-text">Mon espérience en esports TrackMania</p>
           <div class="carousel-fixed-item center">
             <a class="btn waves-effect white grey-text darken-text-2" href="https://trackmania.io/#/player/2c978b8b-833e-45ac-b856-c0d674a7f55b">button</a>
           </div>
         </div>
       </div>
-      <footer class="page-footer">
-            <div class="container">
-              <div class="row">
-                <div class="col l6 s12">
-                  <h5 class="white-text">Conclusion</h5>
-                  <p class="grey-text text-lighten-4">clique pour devenir un <a href="gigachad.php">Gigachad</a></p>
-                </div>
-                <div class="col l4 offset-l2 s12 footer">
-                    <!-- Modal Trigger -->
-                    <a class="waves-effect waves-light btn modal-trigger black" href="#modal1">Contactez nous</a>
-        
-                    <!-- Modal Structure -->
-                    <div id="modal1" class="modal">
-                      <div class="modal-content">
-                        <div class="container">
-                        
-                            <label for="fname">Prénom</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Votre prénom de GigaChad...">
-                        
-                            <label for="lname">Nom</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Votre nom de GigaChad...">
-                        
-                            <label for="subject">E.Mail</label>
-                            <textarea id="subject" name="subject" placeholder="Un E.Mail de Chad"></textarea>
-                        
-                            <input class="submit" type="submit" value="Envoyer">
-                        
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Accepter</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="footer-copyright">
-            <div class="container">
-            © Copyright Les deux GigaChad appeler Dylan Beney et William Gabali
-        </div>
-        </div>
-      </footer>
-    <script type="text/javascript" src="js/JqueryMin.js"></script>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
-</html>
+      <?php require_once "footer.php"?>
