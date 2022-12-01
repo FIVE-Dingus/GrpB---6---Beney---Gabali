@@ -13,18 +13,17 @@
                     <div id="modal1" class="modal">
                       <div class="modal-content">
                         <div class="container">
-                        
+                            <form method="post" action="action/sendEmail.php">
                             <label for="fname">Prénom</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Votre prénom de GigaChad...">
-                        
-                            <label for="lname">Nom</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Votre nom de GigaChad...">
-                        
-                            <label for="subject">E.Mail</label>
-                            <textarea id="subject" name="subject" placeholder="Un E.Mail de Chad"></textarea>
-                        
+                            <input type="text" id="#fname" name="fname" placeholder="Votre prénom de GigaChad...">
+
+                            <label for="#email">Votre email</label>
+                            <input id="email" type='email' name='email' placeholder="Votre E.mail de GigaChad">
+
+                            <label for="#content">Contenue</label>
+                            <input type="text" id="content" name="content" placeholder="Votre Contenue de GigaChad...">
                             <input class="submit" type="submit" value="Envoyer">
-                        
+                            </form>
                         </div>
                       </div>
                       <div class="modal-footer">

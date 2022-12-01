@@ -42,7 +42,7 @@
         <?php if(!isset($_SESSION['user'])){ ?>
           <a class="waves-effect waves-light btn modal-trigger black" href="#modal2">Inscrivez vous</a>
           <div id="modal2" class="modal">
-            <form method="post" action="action/register.php">
+                <form method="post" action="action/register.php">
                 <label for="#email">Votre email</label>
                 <input id="email" type='email' name='email'>
                 <label for="#password">Votre Mot de passe</label>

@@ -2,13 +2,13 @@
 require_once "../cfg/config.php"; 
 
 
-$destination1 = "../img/".$_FILES['img1']['name']; //dossier "upload"
+$destination1 = "img/".$_FILES['img1']['name']; //dossier "upload"
 move_uploaded_file($_FILES['img1']['tmp_name'],$destination1);
-$destination2 = "../img/".$_FILES['img2']['name']; //dossier "upload"
+$destination2 = "img/".$_FILES['img2']['name']; //dossier "upload"
 move_uploaded_file($_FILES['img2']['tmp_name'],$destination2);
-$destination3 = "../img/".$_FILES['img3']['name']; //dossier "upload"
+$destination3 = "img/".$_FILES['img3']['name']; //dossier "upload"
 move_uploaded_file($_FILES['img3']['tmp_name'],$destination3);
-$destination4 = "../img/".$_FILES['img4']['name']; //dossier "upload"
+$destination4 = "img/".$_FILES['img4']['name']; //dossier "upload"
 move_uploaded_file($_FILES['img4']['tmp_name'],$destination4);
 
 

@@ -32,6 +32,6 @@ $("#trigger-wg").on("click", function(){
 
 
 
-$(".submit").click(function(){
-     window.open("easteregg.php");
-     })   
+// $(".submit").click(function(){
+//      window.open("easteregg.php");
+//      })   
